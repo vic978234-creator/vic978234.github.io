@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dae Geun Song | Data & Media Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #e50914; /* 넷플릭스 레드 */
+            --secondary-color: #007bff; /* 신뢰감을 주는 블루 */
+            --dark-color: #111111;
+            --bg-color: #f9f9fb;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 헤더 영역 */
+        header {
+            text-align: center;
+            padding: 50px 30px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            color: var(--dark-color);
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin: 10px 0 0 0;
+        }
+
+        /* 세부 섹션 스타일 */
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: var(--dark-color);
+            border-bottom: 2px solid #eceff1;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-item h4 {
+            margin: 0 0 8px 0;
+            color: var(--secondary-color);
+        }
+
+        /* PRD 스타일 구조 */
+        .prd-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 25px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 20px;
+        }
+
+        .prd-badge {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .grid-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            border: 1px solid #dee2e6;
+        }
+
+        .grid-item strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.2s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #b80710;
+            box-shadow: 0 4px 10px rgba(229, 9, 20, 0.3);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Dae Geun Song</h1>
+            <p>영상의 미학을 데이터의 논리로 연결하는 융합형 기획자</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>안녕하세요! 영상학적 관점의 비평과 논리적인 데이터 분석을 결합하여 가치 있는 흐름을 도출하는 송대근입니다. 대학에서 영상학을 전공하며 콘텐츠의 구조적 서사와 대중의 심리를 해석하는 눈을 키웠습니다. 이에 안주하지 않고, 현상과 흥행의 본질을 수학적이고 객관적인 지표로 증명하고자 파이썬 기반의 데이터 분석 기술을 융합하고 있습니다.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>📊 Data & Analytics</h4>
+                    <p>Python (Pandas, NumPy), 원시 데이터 정제(Data Cleaning), 통계 기반 데이터 핸들링</p>
+                </div>
+                <div class="skill-item">
+                    <h4>🖥️ Web & Visualization</h4>
+                    <p>Streamlit 대시보드 구축, Plotly 활용 인터랙티브 시각화, GitHub Pages 호스팅</p>
+                </div>
+                <div class="skill-item">
+                    <h4>🎬 Media Production</h4>
+                    <p>콘텐츠 시나리오 작성, 미디어 파이프라인 기획 및 데이터 아카이빙</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-prd">
+            <h2>Featured Project</h2>
+            
+            <div class="prd-box">
+                <span class="prd-badge">PROJECT PRD & PLAN</span>
+                <h3>🎬 Beyond the Stream: Netflix’s Global Success Formula in 2025</h3>
+                <p><strong>Overview:</strong> 2025년 최신 넷플릭스 데이터를 활용하여 글로벌 OTT 시장 내 콘텐츠의 상업적 흥행(Popularity)과 작품성(Rating) 사이의 상관관계를 탐구하는 데이터 분석 웹 대시보드입니다.</p>
+                
+                <hr style="border: 0; border-top: 1px solid #dee2e6; margin: 20px 0;">
+
+                <h4>💡 Project Plan (5W1H)</h4>
+                <ul>
+                    <li><strong>Why:</strong> 넷플릭스가 취하고 있는 콘텐츠 로컬라이제이션 전략의 실체를 상업성 지표와 비평적 가치 대조를 통해 논리적으로 증명하기 위함.</li>
+                    <li><strong>Who:</strong> 데이터 기반의 OTT 콘텐츠 트렌드 분석 및 글로벌 마케팅 전략 수립에 관심 있는 기획자 및 평가단.</li>
+                    <li><strong>What:</strong> 영화/TV쇼 데이터 통합, 인기도 vs 평점 산점도 분석, 글로벌 언어권별 제작 비중 추적, 실시간 작품 상세 검색.</li>
+                    <li><strong>When:</strong> 성균관대학교 기말 프로젝트(W13-W16) 발표 현장 및 데이터 기반 콘텐츠 제작 시나리오 기획 시 활용.</li>
+                    <li><strong>Where:</strong> GitHub 저장소 호스팅 및 Streamlit Cloud 기반의 웹 브라우저 환경.</li>
+                    <li><strong>How:</strong> Python 언어를 기반으로 Pandas, Streamlit, Plotly 라이브러리를 결합하여 구현.</li>
+                </ul>
+
+                <hr style="border: 0; border-top: 1px solid #dee2e6; margin: 20px 0;">
+
+                <h4>🛠️ 3-Step Development Roadmap</h4>
+                <div class="grid-3">
+                    <div class="grid-item">
+                        <strong>Step 1: Framework</strong>
+                        대용량 영화 및 TV 쇼 상세 CSV 데이터를 Pandas로 결합하고, 핵심 KPI 지표를 도출하는 기본 구조 설계.
+                    </div>
+                    <div class="grid-item">
+                        <strong>Step 2: Interactivity</strong>
+                        다차원 사이드바 필터(장르, 연도, 평점)를 추가하고 Plotly를 연동하여 동적 시각화 구현.
+                    </div>
+                    <div class="grid-item">
+                        <strong>Step 3: Polish</strong>
+                        실시간 텍스트 기반 작품 검색 기능을 고도화하고, Streamlit Cloud 배포 및 최종 문서화 완료.
+                    </div>
+                </div>
+
+                <a href="https://your-app-name.streamlit.app/" target="_blank" class="btn">Live Dashboard 바로가기</a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>성균관대학교 (Sungkyunkwan University)</strong> 영상학과 학사 재학 중 (4학년)</li>
+                <li>교과 성적: Cumulative GPA <strong>3.8 / 4.5</strong></li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
